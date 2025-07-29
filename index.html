@@ -118,7 +118,7 @@
                 text: fullUrl,
                 width: qrSize,
                 height: qrSize,
-                colorDark: "#000000",
+                colorDark: "#001742",
                 colorLight: "#ffffff",
                 correctLevel: QRCode.CorrectLevel.H
             });
@@ -164,9 +164,9 @@
                 const logoX = (qrSize - logoSize) / 2;
                 const logoY = (qrSize - logoSize) / 2;
                 
-                // ロゴの背景に白い四角を描画
+                // ロゴの背景に白い四角を描画（余白を調整）
                 ctx.fillStyle = '#FFFFFF';
-                ctx.fillRect(logoX - 5, logoY - 5, logoSize + 10, logoSize + 10);
+                ctx.fillRect(logoX - 2, logoY - 2, logoSize + 4, logoSize + 4);
 
                 // ロゴを描画
                 ctx.drawImage(logo, logoX, logoY, logoSize, logoSize);
